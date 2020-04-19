@@ -20,7 +20,7 @@ plt.plot(Sol2.t,Sol2.y[0],'b',t2,y2,'r')
 plt.xlabel('t')
 plt.ylabel('y')
 plt.legend(['solve_ivp','Analytical'])
-plt.text(2.2, 1.5, r"$\dot{y}=1-(t-y)^2$", fontsize=16)
+plt.text(2.2, -5, r"$\dot{y}=1-(t-y)^2$", fontsize=16)
 
 Sol3=scint.solve_ivp(lambda t, y: 1+y/t, [1, 2], [2],t_eval=np.linspace(1,2))
 t3=np.linspace(1,2)
