@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 Sol1=scint.solve_ivp(lambda t, y: t*np.exp(3*t)-2*y, [0, 1], [0],t_eval=np.linspace(0,1))
 t1=np.linspace(0,1)
-y1=(5*t1-1)*np.exp(3*t1)/25-np.exp(-2*t1)/25
+y1=(5*t1-1)*np.exp(3*t1)/25+np.exp(-2*t1)/25
 plt.plot(Sol1.t,Sol1.y[0],'b',t1,y1,'r')
 plt.xlabel('t')
 plt.ylabel('y')
