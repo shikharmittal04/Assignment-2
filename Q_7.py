@@ -12,9 +12,9 @@ plt.ylabel('y')
 plt.legend(['solve_ivp','Analytical'])
 plt.text(0.5, 1.5, r"$\dot{y}=te^{3t}-2y$", fontsize=16)
 
-Sol2=scint.solve_ivp(lambda t, y: 1-(t-y)**2, [2, 3], [2],t_eval=np.linspace(2,3))
+Sol2=scint.solve_ivp(lambda t, y: 1-(t-y)**2, [2, 3], [1],t_eval=np.linspace(2,3))
 t2=np.linspace(2,3)
-y2=t2
+y2=t2+1/(t2-3)
 plt.subplots()
 plt.plot(Sol2.t,Sol2.y[0],'b',t2,y2,'r')
 plt.xlabel('t')
