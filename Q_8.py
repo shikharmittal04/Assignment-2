@@ -1,4 +1,4 @@
-#Question 7: 4 boundary value problems.
+#Question 8: 4 boundary value problems.
 import scipy.integrate as scint
 import numpy as np
 import matplotlib.pyplot as plt
@@ -17,7 +17,7 @@ plt.plot(x1,Sol1.sol(x1)[0],'b',x1,y1,'r')
 plt.xlabel('x')
 plt.ylabel('y')
 plt.legend(['solve_bvp','Analytical'])
-plt.text(0.5, 1.5, r"$y''=-e^{-2x}$", fontsize=16)
+plt.text(0.5, 1.5, r"$y''=-e^{-2y}$", fontsize=16)
 
 
 def fun2(x, y):
